@@ -13,6 +13,9 @@ import leaderboardRoutes from "./routes/leaderboardRoutes.js";
 import profileRoutes from "./routes/profileRoutes.js";
 
 const app = express();
+if (process.env.NODE_ENV === "production") {
+    app.set("trust proxy", 1);
+}
 
 // Trust proxy configuration will be set according to the hosting provider
 // when deployment infrastructure is selected.
