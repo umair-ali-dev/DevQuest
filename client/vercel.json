@@ -1,13 +1,13 @@
 {
-    "$schema": "https://openapi.vercel.sh/vercel.json",
-    "rewrites": [
-        {
-            "source": "/api/:path*",
-            "destination": "https://devquest-hk6l.onrender.com:path*"
-        },
-        {
-            "source": "/(.*)",
-            "destination": "/index.html"
-        }
-    ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://devquest-hk6l.onrender.com/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
